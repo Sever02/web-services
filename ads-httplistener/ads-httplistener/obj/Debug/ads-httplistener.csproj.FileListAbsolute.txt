@@ -1,0 +1,6 @@
+D:\Projects\BSU\web-services\ads-httplistener\ads-httplistener\bin\Debug\ads-httplistener.exe.config
+D:\Projects\BSU\web-services\ads-httplistener\ads-httplistener\bin\Debug\ads-httplistener.exe
+D:\Projects\BSU\web-services\ads-httplistener\ads-httplistener\bin\Debug\ads-httplistener.pdb
+D:\Projects\BSU\web-services\ads-httplistener\ads-httplistener\obj\Debug\ads-httplistener.csprojResolveAssemblyReference.cache
+D:\Projects\BSU\web-services\ads-httplistener\ads-httplistener\obj\Debug\ads-httplistener.exe
+D:\Projects\BSU\web-services\ads-httplistener\ads-httplistener\obj\Debug\ads-httplistener.pdb
