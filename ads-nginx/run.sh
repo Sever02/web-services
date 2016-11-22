@@ -1,0 +1,1 @@
+fastcgi-daemon2 --config=csimple.conf
