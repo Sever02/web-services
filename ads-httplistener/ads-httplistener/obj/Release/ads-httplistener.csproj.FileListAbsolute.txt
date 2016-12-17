@@ -1,0 +1,15 @@
+C:\ads\ads-httplistener\ads-httplistener\bin\Release\ads-httplistener.exe.config
+C:\ads\ads-httplistener\ads-httplistener\bin\Release\ads-httplistener.exe
+C:\ads\ads-httplistener\ads-httplistener\bin\Release\ads-httplistener.pdb
+C:\ads\ads-httplistener\ads-httplistener\bin\Release\mscorlib.dll
+C:\ads\ads-httplistener\ads-httplistener\bin\Release\normidna.nlp
+C:\ads\ads-httplistener\ads-httplistener\bin\Release\normnfc.nlp
+C:\ads\ads-httplistener\ads-httplistener\bin\Release\normnfd.nlp
+C:\ads\ads-httplistener\ads-httplistener\bin\Release\normnfkc.nlp
+C:\ads\ads-httplistener\ads-httplistener\bin\Release\normnfkd.nlp
+C:\ads\ads-httplistener\ads-httplistener\obj\Release\ads-httplistener.csprojResolveAssemblyReference.cache
+C:\ads\ads-httplistener\ads-httplistener\obj\Release\ads-httplistener.exe
+C:\ads\ads-httplistener\ads-httplistener\obj\Release\ads-httplistener.pdb
+D:\Dist\Win Server 2012 R2 180 trial from 12 12 2016\shared\ads-httplistener\ads-httplistener\bin\Release\ads-httplistener.exe.config
+D:\Dist\Win Server 2012 R2 180 trial from 12 12 2016\shared\ads-httplistener\ads-httplistener\obj\Release\ads-httplistener.exe
+D:\Dist\Win Server 2012 R2 180 trial from 12 12 2016\shared\ads-httplistener\ads-httplistener\obj\Release\ads-httplistener.pdb

@@ -4,3 +4,21 @@ D:\Projects\BSU\web-services\ads-httplistener\ads-httplistener\bin\Debug\ads-htt
 D:\Projects\BSU\web-services\ads-httplistener\ads-httplistener\obj\Debug\ads-httplistener.csprojResolveAssemblyReference.cache
 D:\Projects\BSU\web-services\ads-httplistener\ads-httplistener\obj\Debug\ads-httplistener.exe
 D:\Projects\BSU\web-services\ads-httplistener\ads-httplistener\obj\Debug\ads-httplistener.pdb
+C:\ads\ads-httplistener\ads-httplistener\bin\Debug\ads-httplistener.exe.config
+C:\ads\ads-httplistener\ads-httplistener\bin\Debug\ads-httplistener.exe
+C:\ads\ads-httplistener\ads-httplistener\bin\Debug\ads-httplistener.pdb
+C:\ads\ads-httplistener\ads-httplistener\bin\Debug\mscorlib.dll
+C:\ads\ads-httplistener\ads-httplistener\bin\Debug\normidna.nlp
+C:\ads\ads-httplistener\ads-httplistener\bin\Debug\normnfc.nlp
+C:\ads\ads-httplistener\ads-httplistener\bin\Debug\normnfd.nlp
+C:\ads\ads-httplistener\ads-httplistener\bin\Debug\normnfkc.nlp
+C:\ads\ads-httplistener\ads-httplistener\bin\Debug\normnfkd.nlp
+C:\ads\ads-httplistener\ads-httplistener\obj\Debug\ads-httplistener.csprojResolveAssemblyReference.cache
+C:\ads\ads-httplistener\ads-httplistener\obj\Debug\ads-httplistener.exe
+C:\ads\ads-httplistener\ads-httplistener\obj\Debug\ads-httplistener.pdb
+D:\Dist\Win Server 2012 R2 180 trial from 12 12 2016\shared\ads-httplistener\ads-httplistener\bin\Debug\ads-httplistener.exe.config
+D:\Dist\Win Server 2012 R2 180 trial from 12 12 2016\shared\ads-httplistener\ads-httplistener\obj\Debug\ads-httplistener.exe
+D:\Dist\Win Server 2012 R2 180 trial from 12 12 2016\shared\ads-httplistener\ads-httplistener\obj\Debug\ads-httplistener.pdb
+D:\Dist\Win Server 2012 R2 180 trial from 12 12 2016\shared\ads-httplistener\ads-httplistener\bin\Debug\ads-httplistener.exe
+D:\Dist\Win Server 2012 R2 180 trial from 12 12 2016\shared\ads-httplistener\ads-httplistener\bin\Debug\ads-httplistener.pdb
+D:\Dist\Win Server 2012 R2 180 trial from 12 12 2016\shared\ads-httplistener\ads-httplistener\obj\Debug\ads-httplistener.csprojResolveAssemblyReference.cache

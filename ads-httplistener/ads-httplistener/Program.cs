@@ -1,46 +1,34 @@
-﻿using System.Net;
+﻿using System;
+using System.Net;
 using System.Text;
-using System.Threading; 
+using System.Threading;
+using ads_httplistener.Server;
 
 namespace ads_httplistener
 {
     class Program
     {
-        private class WebServer
-        {
-            HttpListener _listener;
-
-            public WebServer(string address)
-            {
-                _listener = new HttpListener();
-                _listener.Prefixes.Add(address);
-            }
-
-            public void Start()
-            {
-                _listener.Start();
-                while (true)
-                {
-                    HttpListenerContext request = _listener.GetContext();
-                    ThreadPool.QueueUserWorkItem(ProcessRequest, request);
-                }
-            }
-
-            void ProcessRequest(object listenerContext)
-            {
-                var context = (HttpListenerContext)listenerContext;
-                context.Response.StatusCode = (int)HttpStatusCode.OK;
-                context.Response.AddHeader("Content-Type", "text/plain; charset=utf-8");
-                var msg = Encoding.UTF8.GetBytes("Hello, Lords.");
-                context.Response.ContentLength64 = msg.Length;
-                context.Response.OutputStream.Write(msg, 0, msg.Length);
-                context.Response.OutputStream.Close();
-            }
-        } 
-
+        // args[0] - count of threads
+        // args[1] - length of request queue
         static void Main(string[] args)
         {
-            (new WebServer("http://localhost:9998/")).Start();
+#if DEBUG
+            args = new[] { "2", "20" };
+#endif
+
+            if (args.Length < 2)
+            {
+                Console.WriteLine("You should specify THREADS and RQUEUE");
+                return;
+            }
+
+            int cthreads = Int32.Parse(args[0]);
+            int lqueue = Int32.Parse(args[1]);
+
+#if DEBUG
+            ADServer.Start("http://localhost:8888/", cthreads, lqueue);
+#endif
+            ADServer.Start("http://*:80/", cthreads, lqueue);
         }
     }
 }
