@@ -22,3 +22,5 @@ D:\Dist\Win Server 2012 R2 180 trial from 12 12 2016\shared\ads-httplistener\ads
 D:\Dist\Win Server 2012 R2 180 trial from 12 12 2016\shared\ads-httplistener\ads-httplistener\bin\Debug\ads-httplistener.exe
 D:\Dist\Win Server 2012 R2 180 trial from 12 12 2016\shared\ads-httplistener\ads-httplistener\bin\Debug\ads-httplistener.pdb
 D:\Dist\Win Server 2012 R2 180 trial from 12 12 2016\shared\ads-httplistener\ads-httplistener\obj\Debug\ads-httplistener.csprojResolveAssemblyReference.cache
+D:\Dist\Win Server 2012 R2 180 trial from 12 12 2016\shared\ads-httplistener\ads-httplistener\bin\Debug\Newtonsoft.Json.dll
+D:\Dist\Win Server 2012 R2 180 trial from 12 12 2016\shared\ads-httplistener\ads-httplistener\bin\Debug\Newtonsoft.Json.xml

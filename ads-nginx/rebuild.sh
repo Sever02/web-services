@@ -1,1 +1,1 @@
-g++ SimpleClass.cpp -O3 -fPIC -lfastcgi-daemon2 -shared -o libcsimple.so;sudo cp libcsimple.so /fastcgi/csimple
+g++ SimpleClass.cpp -std=c++0x -O2 -fPIC -lfastcgi-daemon2 -shared -o libcsimple.so;sudo cp libcsimple.so /fastcgi/csimple;g++ SimpleClass2.cpp -std=c++0x -O2 -fPIC -lfastcgi-daemon2 -shared -o libcsimple2.so;sudo cp libcsimple2.so /fastcgi/csimple2
