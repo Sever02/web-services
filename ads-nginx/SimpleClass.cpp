@@ -32,35 +32,24 @@ public:
         }
         virtual void handleRequest(fastcgi::Request *request, fastcgi::HandlerContext *context) {
 
-				string query = request->getQueryString();
-				int geo_pos = query.find("geo=") + 4;
-				int geo_len = query.find("&", geo_pos) - geo_pos;
-				int bt_pos = query.find("bt=") + 3;
-				int bt_len = query.find("&", bt_pos) - bt_pos;
-				int demo_pos = query.find("demo=") + 5;
-				int demo_len = query.find("&", demo_pos) - demo_pos;
-				int placement_pos = query.find("placement=") + 10;
-				
-				int geo = atoi( query.substr(geo_pos, geo_len).c_str() );
-				int bt = atoi( query.substr(bt_pos, bt_len).c_str() );
-				int demo = atoi( query.substr(demo_pos, demo_len).c_str() );
-				int placement = atoi( query.substr(placement_pos).c_str() );
-				
-				//geo=1&bt=2&demo=3&placement=4
+				int geo = atoi(request->getArg("geo").c_str());
+				int bt = atoi(request->getArg("bt").c_str());
+				int demo = atoi(request->getArg("demo").c_str());
+				int placement = atoi(request->getArg("placement").c_str());
 		
 				vector<Ad>::iterator resIt = find_if(Ads.begin(), Ads.end(), 
 					[geo, bt, demo, placement] (const Ad& ad) { 
 						bool match = true;
-						match &= binary_search(ad.Geos.begin(), ad.Geos.end(), geo);
-						match &= binary_search(ad.Behaves.begin(), ad.Behaves.end(), bt);
-						match &= binary_search(ad.Demos.begin(), ad.Demos.end(), demo);
-						match &= binary_search(ad.Placements.begin(), ad.Placements.end(), placement);
+						match &= find(ad.Geos.begin(), ad.Geos.end(), geo) != ad.Geos.end();
+						match &= find(ad.Behaves.begin(), ad.Behaves.end(), bt) != ad.Behaves.end();
+						match &= find(ad.Demos.begin(), ad.Demos.end(), demo) != ad.Demos.end();
+						match &= find(ad.Placements.begin(), ad.Placements.end(), placement) != ad.Placements.end();
 						return match; 
 				} );
 				
 				if (resIt != Ads.end())
 				{
-					Ad res = *resIt;
+					const Ad& res = *resIt;
 					request->write(res.Uri.c_str(), res.Uri.size());
 				}
 				else {
