@@ -68,15 +68,13 @@ public:
 				matchField(ad.Geos, geo) &&
 				matchField(ad.Behaves, bt) &&
 				matchField(ad.Demos, demo) &&
-				matchField(ad.Placements, placement) &&
-				ad.Units > 0
+				matchField(ad.Placements, placement)
 			);
 		};
 
-		for (auto& ad : Ads) {
+		for (const auto& ad : Ads) {
 			if (isMatch(ad)) {
-				ad.Units--;
-				write(request, ad.Uri);				
+				write(request, ad.Uri);
 				return;
 			}
 		}

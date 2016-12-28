@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
@@ -23,7 +24,7 @@ namespace ads_httplistener.Server
             
             public string Uri { get; set; }
 
-            public int Units { get; set; }
+            public int Units;
         }
 
         private static List<Ad> Ads;
@@ -60,7 +61,7 @@ namespace ads_httplistener.Server
 
             if (ad != null)
             {
-                ad.Units--;
+                Interlocked.Decrement(ref ad.Units);
 
                 context.Response.StatusCode = (int)HttpStatusCode.OK;
                 context.Response.AddHeader("Content-Type", "text/plain; charset=utf-8");
